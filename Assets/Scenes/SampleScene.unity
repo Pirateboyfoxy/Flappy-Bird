@@ -1410,7 +1410,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -601.9, y: 387.6}
+  m_AnchoredPosition: {x: -585, y: 382}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1053764995
@@ -1436,7 +1436,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 22
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -2370,7 +2370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -683.501, y: 390.5}
+  m_AnchoredPosition: {x: -676, y: 385}
   m_SizeDelta: {x: 140.9981, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1611393487
@@ -2396,7 +2396,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 22
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -2794,6 +2794,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6138423984581765178, guid: 304081317b5014f1a8b92c698df81300, type: 3}
+      propertyPath: scoreUI
+      value: 
+      objectReference: {fileID: 1053764995}
     - target: {fileID: 6138423984581765181, guid: 304081317b5014f1a8b92c698df81300, type: 3}
       propertyPath: m_Name
       value: Red_Bird_0
