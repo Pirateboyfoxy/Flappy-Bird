@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BirdController : MonoBehaviour
 {
@@ -12,6 +14,9 @@ public class BirdController : MonoBehaviour
     public Text scoreUI;
 
     public bool isAlive;
+
+    public TextMeshProUGUI gameOverText;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +32,11 @@ public class BirdController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isAlive)
         {
             bird.AddForce(new Vector2(0,1) * 150);
+        }
+
+        if(isAlive == false)
+        {
+            GameOver();
         }
     }
 
@@ -45,6 +55,16 @@ public class BirdController : MonoBehaviour
     {
         // set alive to false on Collider
         isAlive = false;
+    }
+
+    public void GameOver()
+    {
+        gameOverText.gameObject.SetActive(true);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
 
